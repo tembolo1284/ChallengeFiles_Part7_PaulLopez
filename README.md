@@ -7,7 +7,7 @@ After the above is complete I use some SQL to pull in the time and closes that a
 I also construct a query that pulls in the top ten daily returns.  So much for individual stock analysis!
 
 Now I analyze the entire portfolio!  The first thing I do is construct a SQL query that joins all four tables together by the common
-column of 'time'. I then average across all the daily returns of the stocks (assume equal weighting for the mean) and create
+column of 'time'. I then average across all the daily returns of the stocks (assume equal weighting of each for the mean) and create
 a dataframe with a date and average daily return of the four stocks. I then convert these average daily returns
 into an annualized return.  For the final step I use the average daily returns and create a dataframe with a date and
 cumulative return for each date. This final cumulative return dataframe I then plot for analysis.
